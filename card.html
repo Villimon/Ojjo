@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Каталог</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/stylecard.css" />
+  <link rel="stylesheet" type="text/css" href="css/iconstyle.css" />
+  <meta name="viewport" content="width=device-width">
+
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__menu menu">
+            <div class="menu__icon">
+              <span></span>
+            </div>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li><a href="#" class="menu__link">Контрагентам</a></li>
+                <li><a href="#" class="menu__link">Дизайнерам</a></li>
+                <li><a href="#" class="menu__link">Вакансии</a></li>
+                <li><a href="#" class="menu__link menu__list-hidden">Вход/Регистрация</a></li>
+              </ul>
+              <ul class="menu__list menu__list-hidden menu__list-row">
+                <li><a href="#" class="menu__link _icon-user menu-icon"></a></li>
+                <li><a href="#" class="menu__link _icon-heart menu-icon"></a></li>
+              </ul>
+              <ul class="menu__list menu__list-hidden menu__list-row">
+                <li><a href="#" class="menu__link _icon-youtube menu-icon"></a></li>
+                <li><a href="#" class="menu__link _icon-vk menu-icon"></a></li>
+                <li><a href="#" class="menu__link _icon-facebook menu-icon"></a></li>
+                <li><a href="#" class="menu__link _icon-tg menu-icon"></a></li>
+                <li><a href="#" class="menu__link _icon-e menu-icon"></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__logo">
+            <a href="index.html">
+              <img src="img/OJJO.svg" alt="">
+            </a>
+          </div>
+          <div class="header__user user">
+            <div class="user__search search">
+              <form action="#" class="search__form">
+                <button type="submit" class="search__btn user__icon _icon-search"></button>
+                <input type="text" name="form[]" placeholder="Поиск" class="search__input">
+              </form>
+            </div>
+            <div class="user__reg">
+              <a href="" class="user__link">Вход/Регистрация</a>
+            </div>
+            <div class="user__profil">
+              <div class="user__user">
+                <a href="" class="user__icon _icon-user"></a>
+              </div>
+              <div class="user__favorites">
+                <a href="" class="user__icon _icon-heart"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <main class="page">
+      <!-- Сделать так, что при нажатие на другой товар у меня менялось в карточке название бренда, название предмета, категория и цена -->
+      <section class="card">
+        <div class="card__container container">
+          <div class="card__menu">
+            <ul class="card__list">
+              <li><a href="index.html" class="card__link">Главная</a></li>
+              <li><a href="catalog.html" class="card__link">Каталог</a></li>
+              <li><a href="" class="card__link">Категория</a></li>
+              <!-- Нужно чтобы 4 пункт получал через JS название товара -->
+              <li class="card__linkadd">Подвеска Dolce & Gabarra</li>
+            </ul>
+          </div>
+          <div class="card__body">
+            <div class="card__row">
+              <div class="card__image image">
+                <div class="image__main">
+                  <img src="img/Rectangle 23.svg" alt="">
+                </div>
+                <div class="image__additional">
+                  <img src="img/Rectangle 26.svg" alt="">
+                  <img src="img/Rectangle 26.svg" alt="">
+                  <img src="img/Rectangle 26.svg" alt="">
+                </div>
+              </div>
+              <div class="card__block block">
+                <div class="block__body">
+                  <div class="block__name">Подвеска Dolce & Gabbara</div>
+                  <div class="block__list">
+                    <ul>
+                      <li class="block__point">Категория: <span>Подвески</span></li>
+                      <li class="block__point">Бренд: <span>Dolce & Gabbara</span></li>
+                    </ul>
+                  </div>
+                  <hr class="block__line">
+                  <div class="block__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit mattis scelerisque odio nunc. Ipsum
+                    quis facilisis turpis vulputate. Viverra dignissim in nec phasellus. Tincidunt est ipsum diam,
+                    vestibulum dignissim dui diam. Et nulla sit convallis orci est, fames sit luctus lacus. Nunc donec
+                    malesuada amet eget eget pharetra. Ultricies et, ac varius at amet viverra feugiat non massa.
+                    Vel vel in urna, sodales urna ac sed felis. Tellus augue et senectus malesuada faucibus sollicitudin
+                    ornare. Sit non et sit enim in ornare velit. Ac imperdiet vitae, orci, nec scelerisque enim sit enim
+                    risus.
+                    Et nulla sit convallis orci est, fames sit luctus lacus.
+                  </div>
+                  <div class="block__price">200 000 ₽ </div>
+                  <div class="block__button">
+                    <button type="button" class="block__btn block__btn-black">купить</button>
+                    <button type="button" class="block__btn block__btn-white">добавить в корзину</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__information information-catalog">
+            <div class="information-catalog__body">
+              <div class="information-catalog__row">
+                <div class="information-catalog__left">
+                  <div class="information-catalog__title">
+                    Полное описание товара
+                  </div>
+                  <div class="information-catalog__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Delectus cumque excepturi repellat culpa, facere ab, hic facilis, porro aspernatur animi eveniet
+                    odit quasi saepe minima unde maiores ducimus fuga consectetur?
+                    Totam officia adipisci exercitationem. Ipsum assumenda enim voluptatibus distinctio ullam, quo
+                    culpa? Earum, magni. Cumque, libero cupiditate cum quisquam explicabo maiores recusandae
+                    magnideserunt quae a nulla accusantium laborum.<span class="information-catalog__ellipsis">..</span>
+                    <span class="information-catalog__more">
+                      Nihil consectetur ullam fuga autem dignissimos, possimus dolore laudantium totam veniam? Error,
+                      mollitia exercitationem earum molestias aliquid eligendi recusandae nobis necessitatibus, fugit
+                      debitis temporibus tempora itaque ipsam enim, quibusdam officiis.
+                      Vero repudiandae, ab nobis maiores et fugiat quisquam. Suscipit iure magni nulla libero veritatis
+                      placeat, mollitia modi velit blanditiis! Atque aut dolorem culpa provident et consequatur quasi
+                      facilis dolore quod.
+                      Recusandae saepe minus optio alias provident veniam, quos beatae tempore ipsam cupiditate tempora
+                      nihil eum voluptatibus. Ex delectus numquam sint sequi officiis molestiae explicabo temporibus
+                      excepturi, adipisci eveniet facilis iusto.
+                      Ab sequi quibusdam soluta voluptatem! Magni molestias neque eos et id nemo delectus, qui alias
+                      earum, quidem officia sit necessitatibus dolore iure facere at quasi consequuntur, architecto nam
+                      placeat consequatur.</span>
+                  </div>
+                  <div class="information-catalog__button">
+                    <button type="button" class="information-catalog__btn">читать полностью</button>
+                  </div>
+                </div>
+                <div class="information-catalog__right">
+                  <div class="information-catalog__wrap">
+                    <div class="information-catalog__item information-catalog__item-1">
+                      <div class="information-catalog__img">
+                        <img src="img/Car.svg" alt="">
+                      </div>
+                      <div class="information-catalog__subtitle">
+                        Бесплатная доставка
+                      </div>
+                    </div>
+                    <div class="information-catalog__item information-catalog__item-2">
+                      <div class="information-catalog__img">
+                        <img src="img/Blocnot.svg" alt="">
+                      </div>
+                      <div class="information-catalog__subtitle">
+                        Индивидуальный дизайн
+                      </div>
+                    </div>
+                    <div class="information-catalog__item information-catalog__item-3">
+                      <div class="information-catalog__img">
+                        <img src="img/Pen.svg" alt="">
+                      </div>
+                      <div class="information-catalog__subtitle">
+                        Бесплатная примерка
+                      </div>
+                    </div>
+                    <div class="information-catalog__item information-catalog__item-4">
+                      <div class="information-catalog__img">
+                        <img src="img/Serg.svg" alt="">
+                        <img src="img/Serg.svg" alt="">
+                      </div>
+                      <div class="information-catalog__subtitle">
+                        Личный подход
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__recommendations recommendations">
+            <div class="recommendations__subtitle subtitle">Мы подготовили для вас кое-что еще</div>
+            <div class="recommendations__title title">Товары, которые могут Вам понравиться</div>
+            <div class="recommendations__row">
+              <div class="recommendations__item item-recommendations">
+                <div class="item-recommendations__column">
+                  <div class="item-recommendations__image">
+                    <a href="card.html"><img src="img/Rectangle 21.svg" alt=""></a>
+                  </div>
+                  <div class="item-recommendations__category">Подвеска</div>
+                  <div class="item-recommendations__name">Dolce & Gabanna</div>
+                  <div class="item-recommendations__price">
+                    <button type="button" data-sort="165000" class="item-recommendations__btn">165 000 ₽</button>
+                  </div>
+                </div>
+                <div class="item-recommendations__column">
+                  <div class="item-recommendations__image">
+                    <a href="card.html"><img src="img/Rectangle 21.svg" alt=""></a>
+                  </div>
+                  <div class="item-recommendations__category">Подвеска</div>
+                  <div class="item-recommendations__name">Dolce & Gabanna</div>
+                  <div class="item-recommendations__price">
+                    <button type="button" data-sort="165000" class="item-recommendations__btn">165 000 ₽</button>
+                  </div>
+                </div>
+                <div class="item-recommendations__column">
+                  <div class="item-recommendations__image">
+                    <a href="card.html"><img src="img/Rectangle 21.svg" alt=""></a>
+                  </div>
+                  <div class="item-recommendations__category">Подвеска</div>
+                  <div class="item-recommendations__name">Dolce & Gabanna</div>
+                  <div class="item-recommendations__price">
+                    <button type="button" data-sort="165000" class="item-recommendations__btn">165 000 ₽</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="distribution">
+        <div class="distribution__container container">
+          <div class="distribution__subtitle subtitle">Полезные советы и персональный предложения</div>
+          <div class="distribution__title title">Эксклюзивная рассылка</div>
+          <div class="distribution__body">
+            <div class="distribution__menu">
+              <ul class="distribution__list">
+                <li class="distribution__link"><img src="img/Polygon 2.svg" alt="">Личный менеджер</li>
+                <li class="distribution__link"><img src="img/Polygon 2.svg" alt="">Доставка и оформление</li>
+                <li class="distribution__link"><img src="img/Polygon 2.svg" alt="">Индивидуальный дизайн</li>
+              </ul>
+            </div>
+            <div class="distribution__mainblock">
+              <div class="distribution__block">
+                <form action="#" class="distribution__form">
+                  <input type="email" name="form[]" placeholder="ВАШ E-MAIL" class="distribution__input">
+                  <button class="distribution__btn" type="submit">отправить</button>
+                </form>
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__top">
+          <div class="footer__row">
+            <div class="footer__item item-footer">
+              <div class="item-footer__title">Полезные ссылки <span data-arrow="1" class="item-footer__arrow"></span>
+              </div>
+              <div class="item-footer__body" data-submenu="1">
+                <hr class="item-footer__line">
+                <div class="item-footer__menu">
+                  <ul class="item-footer__list">
+                    <li><a href="" class="item-footer__link">Полезные ссылки</a>
+                    </li>
+                    <li><a href="" class="item-footer__link">Оплата </a></li>
+                    <li><a href="" class="item-footer__link">Акции</a></li>
+                    <li><a href="" class="item-footer__link">Политика конфиденциальности</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer__item item-footer">
+              <div class="item-footer__title">оплата<span data-arrow="2" class="item-footer__arrow"></span></div>
+              <div class="item-footer__body" data-submenu="2">
+                <hr class="item-footer__line">
+                <div class="item-footer__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
+                </div>
+                <div class="item-footer__carts">
+                  <img src="img/Rectangle 13.svg" alt="">
+                  <img src="img/Rectangle 14.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="footer__item item-footer">
+              <div class="item-footer__title">контакты<span data-arrow="3" class="item-footer__arrow"></span></div>
+              <div class="item-footer__body" data-submenu="3">
+                <hr class="item-footer__line">
+                <div class="item-footer__tel">
+                  <div class="_icon-phone"><a href="tel: 88122345655" class="item-footer__phone">8 (812) 234-56-55</a>
+                  </div>
+                  <div class="_icon-phone"><a href="tel: 88122345655" class="item-footer__phone">8 (812) 234-56-55</a>
+                  </div>
+                  <div class="_icon-mail"><a href="" class="item-footer__phone">ojjo@ojjo.ru</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__item item-footer">
+              <div class="item-footer__title">социальные сети<span data-arrow="4" class="item-footer__arrow"></span>
+              </div>
+              <div class="item-footer__body" data-submenu="4">
+                <hr class="item-footer__line">
+                <div class="item-footer__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
+                </div>
+                <div class="item-footer__socials">
+                  <a href="" class="item-footer__social _icon-youtube-2"></a>
+                  <a href="" class="item-footer__social _icon-vk-2"></a>
+                  <a href="" class="item-footer__social _icon-facebook-2"></a>
+                  <a href="" class="item-footer__social _icon-tg-2"></a>
+                  <a href="" class="item-footer__social _icon-e-2"></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="footer__bottom footer-bottom">
+          <div class="footer-bottom__row">
+            <div class="footer-bottom__link">(c) 2020 OJJO jewelry</div>
+            <a href="" class="footer-bottom__link">Договор публичной офферты</a>
+            <a href="" class="footer-bottom__link">Контрагентам</a>
+            <a href="" class="footer-bottom__link">Сделано Figma.info</a>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
+  <!--Конец wrapper-->
+
+  <script src="js/scriptcard.js"></script>
+</body>
+
+</html>

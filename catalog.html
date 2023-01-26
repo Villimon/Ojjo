@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Каталог</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/stylecatalog.css" />
+  <link rel="stylesheet" type="text/css" href="css/iconstyle.css" />
+  <meta name="viewport" content="width=device-width">
+
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__menu menu">
+            <div class="menu__icon">
+              <span></span>
+            </div>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li><a href="#" class="menu__link">Контрагентам</a></li>
+                <li><a href="#" class="menu__link">Дизайнерам</a></li>
+                <li><a href="#" class="menu__link">Вакансии</a></li>
+                <li><a href="#" class="menu__link menu__list-hidden">Вход/Регистрация</a></li>
+              </ul>
+              <ul class="menu__list menu__list-hidden menu__list-row">
+                <li><a href="#" class="menu__link _icon-user menu-icon"></a></li>
+                <li><a href="#" class="menu__link _icon-heart menu-icon"></a></li>
+              </ul>
+              <ul class="menu__list menu__list-hidden menu__list-row">
+                <li><a href="#" class="menu__link _icon-youtube menu-icon"></a></li>
+                <li><a href="#" class="menu__link _icon-vk menu-icon"></a></li>
+                <li><a href="#" class="menu__link _icon-facebook menu-icon"></a></li>
+                <li><a href="#" class="menu__link _icon-tg menu-icon"></a></li>
+                <li><a href="#" class="menu__link _icon-e menu-icon"></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__logo">
+            <a href="index.html">
+              <img src="img/OJJO.svg" alt="">
+            </a>
+          </div>
+          <div class="header__user user">
+            <div class="user__search search">
+              <form action="#" class="search__form">
+                <button type="submit" class="search__btn user__icon _icon-search"></button>
+                <input type="text" name="form[]" placeholder="Поиск" class="search__input">
+              </form>
+            </div>
+            <div class="user__reg">
+              <a href="" class="user__link">Вход/Регистрация</a>
+            </div>
+            <div class="user__profil">
+              <div class="user__user">
+                <a href="" class="user__icon _icon-user"></a>
+              </div>
+              <div class="user__favorites">
+                <a href="" class="user__icon _icon-heart"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <main class="page">
+
+      <section class="catalog">
+        <div class="catalog__container container">
+          <div class="catalog__block block-catalog">
+            <div class="block-catalog__catalog">
+              <ul class="block-catalog__buttons">
+                <li><button class="block-catalog__btn" type="button" data-btn="1">Бренд<span
+                      class="block-catalog__arrow" data-arrowbtn="1"></span></button>
+                  <ul class="block-catalog__submenu " data-menu="1">
+                    <li><button class="block-catalog__link" data-tab="#tab_1">Dolce & Gabanna</button></li>
+                    <li><button class="block-catalog__link" data-tab="#tab_2">Puma</button></li>
+                    <li><button class="block-catalog__link" data-tab="#tab_3">Nike</bu>
+                    </li>
+                  </ul>
+                </li>
+                <li><button class="block-catalog__btn" type="button" data-btn="2">Цена<span class="block-catalog__arrow"
+                      data-arrowbtn="2"></span></button>
+                  <ul class="block-catalog__submenu" data-menu="2">
+                    <li><button id="sort-desc" class="block-catalog__link">По убыванию</bu>
+                    </li>
+                    <li><button id="sort-asc" class="block-catalog__link">По возрастанию</bu>
+                    </li>
+                  </ul>
+                </li>
+                <li><button class="block-catalog__btn" type="button" data-btn="3">Для кого<span
+                      class="block-catalog__arrow" data-arrowbtn="3"></span></button>
+                  <ul class="block-catalog__submenu" data-menu="3">
+                    <li><button class="block-catalog__link" data-tab="#tab_4">Мужа</bu>
+                    </li>
+                    <li><button class="block-catalog__link" data-tab="#tab_5">Жены</bu>
+                    </li>
+                  </ul>
+                </li>
+                <li><button class="block-catalog__btn" type="button" data-btn="4">Коллекция<span
+                      class="block-catalog__arrow" data-arrowbtn="4"></span></button>
+                  <ul class="block-catalog__submenu" data-menu="4">
+                    <li><button class="block-catalog__link" data-tab="#tab_6">Text</bu>
+                    </li>
+                    <li><button class="block-catalog__link" data-tab="#tab_7">Text</bu>
+                    </li>
+
+                  </ul>
+                </li>
+                <li><button class="block-catalog__btn" type="button" data-btn="5">Сезон<span
+                      class="block-catalog__arrow" data-arrowbtn="5"></span></button>
+                  <ul class="block-catalog__submenu" data-menu="5">
+                    <li><button class="block-catalog__link" data-tab="#tab_8">Зима</bu>
+                    </li>
+                    <li><button class="block-catalog__link" data-tab="#tab_9">Весна</bu>
+                    </li>
+                    <li><button class="block-catalog__link" data-tab="#tab_10">Лето</bu>
+                    </li>
+                    <li><button class="block-catalog__link" data-tab="#tab_11">Осень</bu>
+                    </li>
+                  </ul>
+                </li>
+                <li><button class="block-catalog__btn" type="button" data-btn="6">Событие<span
+                      class="block-catalog__arrow" data-arrowbtn="6"></span></button>
+                  <ul class="block-catalog__submenu" data-menu="6">
+                    <li><button class="block-catalog__link" data-tab="#tab_12">Свадьба</button></li>
+                    <li><button class="block-catalog__link" data-tab="#tab_13">День рождение</bu>
+                    </li>
+                    <li><button class="block-catalog__link" data-tab="#tab_14">Новый год</bu>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="block-catalog__body">
+                <!-- Бренд 1 -->
+                <div class="block-catalog__item item-block-catalog" id="tab_1">
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href="card.html"><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Dolce & Gabanna</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" data-sort="165000" class="item-block-catalog__btn">165 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href="card.html"><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Dolce & Gabanna</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" data-sort="175000" class="item-block-catalog__btn">175 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href="card.html"><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Dolce & Gabanna</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" data-sort="145000" class="item-block-catalog__btn">145 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href="card.html"><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Dolce & Gabanna</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" data-sort="155000" class="item-block-catalog__btn">155 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href="card.html"><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Dolce & Gabanna</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" data-sort="135000" class="item-block-catalog__btn">135 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href="card.html"><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Dolce & Gabanna</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" data-sort="125000" class="item-block-catalog__btn">125 000 ₽</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Бренд 2 -->
+                <div class="block-catalog__item item-block-catalog item-block-catalog-downloadable" id="tab_2">
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Puma</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">175 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Puma</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">165 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Puma</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">155 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Puma</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">145 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Puma</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">135 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Puma</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">125 000 ₽</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Бренд 3 -->
+                <div class="block-catalog__item item-block-catalog item-block-catalog-downloadable" id="tab_3">
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">175 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">165 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">155 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">145 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">135 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">125 000 ₽</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Для мужа -->
+                <div class="block-catalog__item item-block-catalog item-block-catalog-downloadable" id="tab_4">
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">175 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">165 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">155 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">145 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">135 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">125 000 ₽</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Для жены -->
+                <div class="block-catalog__item item-block-catalog item-block-catalog-downloadable" id="tab_5">
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">175 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">165 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">155 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">145 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">135 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">125 000 ₽</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Коллекция 1 -->
+                <div class="block-catalog__item item-block-catalog item-block-catalog-downloadable" id="tab_6">
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">175 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">165 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">155 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">145 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">135 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">125 000 ₽</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Коллекция 2 -->
+                <div class="block-catalog__item item-block-catalog item-block-catalog-downloadable" id="tab_7">
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">175 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">165 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">155 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">145 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">135 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">125 000 ₽</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Зима -->
+                <div class="block-catalog__item item-block-catalog item-block-catalog-downloadable" id="tab_8">
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">175 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">165 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">155 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">145 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">135 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">125 000 ₽</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Весна -->
+                <div class="block-catalog__item item-block-catalog item-block-catalog-downloadable" id="tab_9">
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">175 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">165 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">155 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">145 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">135 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">125 000 ₽</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Лето -->
+                <div class="block-catalog__item item-block-catalog item-block-catalog-downloadable" id="tab_10">
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">175 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">165 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">155 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">145 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">135 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">125 000 ₽</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Осень -->
+                <div class="block-catalog__item item-block-catalog item-block-catalog-downloadable" id="tab_11">
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href="">
+                        <img<a href=""><img src="img/Rectangle 21.svg" alt="">
+                      </a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">175 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href="">
+                        <img<a href=""><img src="img/Rectangle 21.svg" alt="">
+                      </a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">165 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href="">
+                        <img<a href=""><img src="img/Rectangle 21.svg" alt="">
+                      </a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">155 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href="">
+                        <img<a href=""><img src="img/Rectangle 21.svg" alt="">
+                      </a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">145 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href="">
+                        <img<a href=""><img src="img/Rectangle 21.svg" alt="">
+                      </a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">135 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href="">
+                        <img<a href=""><img src="img/Rectangle 21.svg" alt="">
+                      </a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">125 000 ₽</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Событие 1 -->
+                <div class="block-catalog__item item-block-catalog item-block-catalog-downloadable" id="tab_12">
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">175 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">165 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">155 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">145 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">135 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">125 000 ₽</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Событие 2 -->
+                <div class="block-catalog__item item-block-catalog item-block-catalog-downloadable" id="tab_13">
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">175 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">165 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">155 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">145 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">135 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">125 000 ₽</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Событие 3 -->
+                <div class="block-catalog__item item-block-catalog item-block-catalog-downloadable" id="tab_14">
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">175 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">165 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">155 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">145 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">135 000 ₽</button>
+                    </div>
+                  </div>
+                  <div class="item-block-catalog__column">
+                    <div class="item-block-catalog__image">
+                      <a href=""><img src="img/Rectangle 21.svg" alt=""></a>
+                    </div>
+                    <div class="item-block-catalog__name">Nike</div>
+                    <div class="item-block-catalog__price">
+                      <button type="button" class="item-block-catalog__btn">125 000 ₽</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="catalog__button">
+            <button type="button" class="catalog__btn">Покажите еще</button>
+          </div>
+
+          <div class="catalog__information information-catalog">
+            <div class="information-catalog__body">
+              <div class="information-catalog__row">
+                <div class="information-catalog__left">
+                  <div class="information-catalog__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Delectus cumque excepturi repellat culpa, facere ab, hic facilis, porro aspernatur animi eveniet
+                    odit quasi saepe minima unde maiores ducimus fuga consectetur?
+                    Totam officia adipisci exercitationem. Ipsum assumenda enim voluptatibus distinctio ullam, quo
+                    culpa? Earum, magni. Cumque, libero cupiditate cum quisquam explicabo maiores recusandae
+                    magnideserunt quae a nulla accusantium laborum.<span class="information-catalog__ellipsis">..</span>
+                    <span class="information-catalog__more">
+                      Nihil consectetur ullam fuga autem dignissimos, possimus dolore laudantium totam veniam? Error,
+                      mollitia exercitationem earum molestias aliquid eligendi recusandae nobis necessitatibus, fugit
+                      debitis temporibus tempora itaque ipsam enim, quibusdam officiis.
+                      Vero repudiandae, ab nobis maiores et fugiat quisquam. Suscipit iure magni nulla libero veritatis
+                      placeat, mollitia modi velit blanditiis! Atque aut dolorem culpa provident et consequatur quasi
+                      facilis dolore quod.
+                      Recusandae saepe minus optio alias provident veniam, quos beatae tempore ipsam cupiditate tempora
+                      nihil eum voluptatibus. Ex delectus numquam sint sequi officiis molestiae explicabo temporibus
+                      excepturi, adipisci eveniet facilis iusto.
+                      Ab sequi quibusdam soluta voluptatem! Magni molestias neque eos et id nemo delectus, qui alias
+                      earum, quidem officia sit necessitatibus dolore iure facere at quasi consequuntur, architecto nam
+                      placeat consequatur.</span>
+                  </div>
+                  <div class="information-catalog__button">
+                    <button type="button" class="information-catalog__btn">читать полностью</button>
+                  </div>
+
+                </div>
+                <div class="information-catalog__right">
+                  <div class="information-catalog__wrap">
+                    <div class="information-catalog__item information-catalog__item-1">
+                      <div class="information-catalog__img">
+                        <img src="img/Car.svg" alt="">
+                      </div>
+                      <div class="information-catalog__subtitle">
+                        Бесплатная доставка
+                      </div>
+                    </div>
+                    <div class="information-catalog__item information-catalog__item-2">
+                      <div class="information-catalog__img">
+                        <img src="img/Blocnot.svg" alt="">
+                      </div>
+                      <div class="information-catalog__subtitle">
+                        Индивидуальный дизайн
+                      </div>
+                    </div>
+                    <div class="information-catalog__item information-catalog__item-3">
+                      <div class="information-catalog__img">
+                        <img src="img/Pen.svg" alt="">
+                      </div>
+                      <div class="information-catalog__subtitle">
+                        Бесплатная примерка
+                      </div>
+                    </div>
+                    <div class="information-catalog__item information-catalog__item-4">
+                      <div class="information-catalog__img">
+                        <img src="img/Serg.svg" alt="">
+                        <img src="img/Serg.svg" alt="">
+                      </div>
+                      <div class="information-catalog__subtitle">
+                        Личный подход
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="distribution">
+        <div class="distribution__container container">
+          <div class="distribution__subtitle subtitle">Полезные советы и персональный предложения</div>
+          <div class="distribution__title title">Эксклюзивная рассылка</div>
+          <div class="distribution__body">
+            <div class="distribution__menu">
+              <ul class="distribution__list">
+                <li class="distribution__link"><img src="img/Polygon 2.svg" alt="">Личный менеджер</li>
+                <li class="distribution__link"><img src="img/Polygon 2.svg" alt="">Доставка и оформление</li>
+                <li class="distribution__link"><img src="img/Polygon 2.svg" alt="">Индивидуальный дизайн</li>
+              </ul>
+            </div>
+            <div class="distribution__mainblock">
+              <div class="distribution__block">
+                <form action="#" class="distribution__form">
+                  <input type="email" name="form[]" placeholder="ВАШ E-MAIL" class="distribution__input">
+                  <button class="distribution__btn" type="submit">отправить</button>
+                </form>
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__top">
+          <div class="footer__row">
+            <div class="footer__item item-footer">
+              <div class="item-footer__title">Полезные ссылки <span data-arrow="1" class="item-footer__arrow"></span>
+              </div>
+              <div class="item-footer__body" data-submenu="1">
+                <hr class="item-footer__line">
+                <div class="item-footer__menu">
+                  <ul class="item-footer__list">
+                    <li><a href="" class="item-footer__link">Полезные ссылки</a>
+                    </li>
+                    <li><a href="" class="item-footer__link">Оплата </a></li>
+                    <li><a href="" class="item-footer__link">Акции</a></li>
+                    <li><a href="" class="item-footer__link">Политика конфиденциальности</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer__item item-footer">
+              <div class="item-footer__title">оплата<span data-arrow="2" class="item-footer__arrow"></span></div>
+              <div class="item-footer__body" data-submenu="2">
+                <hr class="item-footer__line">
+                <div class="item-footer__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
+                </div>
+                <div class="item-footer__carts">
+                  <img src="img/Rectangle 13.svg" alt="">
+                  <img src="img/Rectangle 14.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="footer__item item-footer">
+              <div class="item-footer__title">контакты<span data-arrow="3" class="item-footer__arrow"></span></div>
+              <div class="item-footer__body" data-submenu="3">
+                <hr class="item-footer__line">
+                <div class="item-footer__tel">
+                  <div class="_icon-phone"><a href="tel: 88122345655" class="item-footer__phone">8 (812) 234-56-55</a>
+                  </div>
+                  <div class="_icon-phone"><a href="tel: 88122345655" class="item-footer__phone">8 (812) 234-56-55</a>
+                  </div>
+                  <div class="_icon-mail"><a href="" class="item-footer__phone">ojjo@ojjo.ru</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__item item-footer">
+              <div class="item-footer__title">социальные сети<span data-arrow="4" class="item-footer__arrow"></span>
+              </div>
+              <div class="item-footer__body" data-submenu="4">
+                <hr class="item-footer__line">
+                <div class="item-footer__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
+                </div>
+                <div class="item-footer__socials">
+                  <a href="" class="item-footer__social _icon-youtube-2"></a>
+                  <a href="" class="item-footer__social _icon-vk-2"></a>
+                  <a href="" class="item-footer__social _icon-facebook-2"></a>
+                  <a href="" class="item-footer__social _icon-tg-2"></a>
+                  <a href="" class="item-footer__social _icon-e-2"></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="footer__bottom footer-bottom">
+          <div class="footer-bottom__row">
+            <div class="footer-bottom__link">(c) 2020 OJJO jewelry</div>
+            <a href="" class="footer-bottom__link">Договор публичной офферты</a>
+            <a href="" class="footer-bottom__link">Контрагентам</a>
+            <a href="" class="footer-bottom__link">Сделано Figma.info</a>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
+  <!--Конец wrapper-->
+
+  <script src="js/scriptcatalog.js"></script>
+</body>
+
+</html>
